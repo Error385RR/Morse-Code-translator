@@ -4,7 +4,7 @@
 
 #define F 523
 #define d 300
-#define d1 600
+#define d1 500
 
 int morse_ASCII();
 
@@ -12,7 +12,7 @@ int main(){
    
  morse_ASCII();
 
-
+ getch();
     
 return 0;
 }
@@ -29,8 +29,9 @@ int morse_ASCII(){
     while (input != EOF)
     {
 
-    fscanf(ftranslator,"%c", &input);
-
+    input = fgetc(ftranslator);
+  
+    
 
     switch (input)
     {
@@ -191,15 +192,24 @@ int morse_ASCII(){
             Beep(F, d);
             Beep(F, d);
             break;
+        case ' ':
+            printf(" \n");
+            break;
         default:
+           if (input == EOF)
+           {
+            printf("End of File");
+           }else{
             printf("Error_unknown \n");
+           }
             break;
         
     }
 
 
-
     }
+    
+   
     fclose(ftranslator);
 
     return 0;

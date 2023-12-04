@@ -1,0 +1,6 @@
+#to remove .exe
+*.exe
+
+#README
+*.md
+
