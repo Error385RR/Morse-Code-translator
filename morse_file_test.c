@@ -195,15 +195,89 @@ int morse_ASCII(){
         case ' ':
             printf(" \n");
             break;
-        default:
-           if (input == EOF)
-           {
-            printf("End of File");
-           }else{
-            printf("Error_unknown \n");
-           }
+        case '0':
+            printf("0: -----");
+            Beep(F, d1);
+            Beep(F, d1);
+            Beep(F, d1);
+            Beep(F, d1);
+            Beep(F, d1);
             break;
-        
+        case '1':
+            printf("1: .----");
+            Beep(F, d);
+            Beep(F, d1);
+            Beep(F, d1);
+            Beep(F, d1);
+            Beep(F, d1);
+            break;
+        case '2':
+            printf("1: ..---");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d1);
+            Beep(F, d1);
+            Beep(F, d1);
+            break;
+        case '3':
+            printf("3: ...--");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d1);
+            Beep(F, d1);
+            break;
+        case '4':
+            printf("4: ....-");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d1);
+            break;
+        case '5':
+            printf("4: .....");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            break;
+        case '6':
+            printf("4: .....");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            break;
+        case '7':
+            printf("4: .....");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            break;
+        case '8':
+            printf("4: .....");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            break;
+        case '9':
+            printf("4: .....");
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            Beep(F, d);
+            break;
+        default:
+            printf("Error_Unknown");
+            
     }
 
 
